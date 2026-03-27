@@ -542,6 +542,21 @@ section {
   transition: color 0.2s;
   letter-spacing: 0.05em;
 }
+.project-link-nn{
+  font-family: 'Space Mono', monospace;
+  font-weight: 900;
+  font-size: 0.75rem;
+  color: beige;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.2s;
+  letter-spacing: 0.05em;
+}
+.project-link-nn:hover{
+  color: #00ff88;
+}
 .project-link:hover {
    color: #39150ff2; 
   }
