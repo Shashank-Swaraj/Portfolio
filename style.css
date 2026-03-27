@@ -9,8 +9,15 @@
   --card: #13131f;
 }
 
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+*, *::before, *::after { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: 
+  border-box; 
+}
+html { 
+  scroll-behavior: smooth; 
+}
 body {
   background: var(--bg);
   color: var(--text);
@@ -62,17 +69,17 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 3rem;
+  padding: 0.5rem 3rem;
   background: rgba(10,10,15,0.85);
   backdrop-filter: blur(16px);
   border-bottom: none;
 }
 nav::after {
   content: "";
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
-  bottom: 10px;   /* adjust this value */
+  bottom: 0px;   /* adjust this value */
   height: 1px;
   background: var(--border);
 }
@@ -93,18 +100,18 @@ nav::after {
 .nav-links { 
   font-family: "Bebas Neue", sans-serif;
   display: flex; 
-  gap: 2.5rem; 
+  gap: 2rem; 
   list-style: none; 
 }
 
 .nav-links a {
-  font-size: 0.9rem;
-  letter-spacing: 0.12em;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
   text-decoration: none;
   transition: color 0.2s;
-  font-weight: 600;
+  font-weight: 500;
 }
 .nav-links a:hover,
 .nav-links a.active { 
@@ -114,14 +121,14 @@ nav::after {
 .nav-profile {
   display: flex;
   align-items: center;
-  gap: 12px;   /* space between image & text */
+  gap: 10px;   /* space between image & text */
   overflow: visible;
   position: relative;
 }
 
 .nav-profile img.active {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   top: 80px;
   left: 50px;
@@ -360,8 +367,8 @@ section {
 
 /* Skills */
 #skills { 
-  max-width: 1100px; 
-  margin: 0 auto; 
+  max-width: 1100px;
+  margin-left: 3rem;
   padding-left: 3rem; 
   padding-right: 3rem; 
   
@@ -403,9 +410,11 @@ section {
 
 /* Projects */
 #projects { 
+  /* font-family: "Libre Baskerville", serif; */
   background: var(--surface); 
   border-top: 1px solid beige; 
   border-bottom: 1px solid beige; 
+  margin: 0 auto;
 }
 
 .projects-inner { 
@@ -459,7 +468,14 @@ section {
   margin-bottom: 1rem;
   opacity: 0.6;
 }
-
+.project-num-nn{
+  Font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  opacity: 0.6;
+  color: #39150ff2;
+}
 .project-highlight .project-title {
   font-size: 1.25rem;
   font-weight: 700;
@@ -471,6 +487,16 @@ section {
   font-weight: 700;
   margin-bottom: 0.75rem;
   color: #39150ff2;
+}
+.project-title-2{
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+  color: rgb(207, 207, 207);
+}
+.project-subtitle{
+  font-size: 0.7rem;
+  margin-bottom: 0.75rem;
 }
 .project-highlight .project-desc{
   color: rgb(215, 184, 184);
@@ -523,7 +549,7 @@ section {
 /* Experience */
 #experience { 
   max-width: 1100px; 
-  margin: 0 auto; 
+  margin-left: 3rem;
   padding-left: 3rem; 
   padding-right: 3rem; 
 }
@@ -661,9 +687,19 @@ footer span {
 }
 
 .nav-profile img {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.4s ease;
 }
+
+
+
+
+
+
+
+
+
+
